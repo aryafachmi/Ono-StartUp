@@ -1,0 +1,143 @@
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+.navbar .container {
+  z-index: 1;
+  position: relative;
+}
+.navbar-main::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.navbar .btn {
+  background-color: #fff;
+}
+/* jumbotron-main */
+.jumbotron-main {
+  background: url(img/office.jpg);
+  background-size: cover;
+  background-position-y: center;
+  height: 600px;
+  margin-top: -75px;
+}
+.jumbotron-main h1 {
+  color: rgb(253, 215, 0);
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  margin-top: 150px;
+  font-size: 40px;
+}
+
+.hiw {
+  margin: 100px 0;
+}
+/* program */
+.program {
+  background: url(img/program.jpg);
+  background-size: cover;
+  background-position-y: center;
+  height: 350px;
+
+  position: relative;
+}
+.program .container {
+  z-index: 1;
+  position: relative;
+}
+.program::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+.program h1 {
+  font-size: 40px;
+  color: rgb(253, 215, 0);
+}
+
+.program .btn {
+  background-color: rgb(253, 215, 0);
+}
+/* events */
+.event .btn {
+  color: white;
+  background-color: black;
+}
+.card {
+  color: #fff;
+  background-color: black;
+}
+/* contact */
+.contact {
+  background-color: black;
+  color: #fff;
+  border-bottom: 0.25px solid orange;
+}
+.contact .form-control {
+  color: orange;
+  border: 0;
+  border-bottom: 1px solid orange;
+  background-color: black;
+  padding-bottom: 15px;
+}
+.contact .form-control::placeholder {
+  color: orange;
+}
+.container input:focus {
+  outline: none;
+  color: orange;
+}
+.contact .icon {
+  color: orange;
+}
+.contact button {
+  color: orange;
+  background-color: black;
+  border: 1px solid orange;
+}
+
+/* footer */
+.footer {
+  color: #fff;
+  background-color: black;
+}
+.bi-heart-fill {
+  color: red;
+}
+.ayang {
+  background-color: black;
+}
+.ayang img {
+  width: 200px;
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  .nav-link {
+    margin-right: 30px;
+  }
+  .nav-link:hover {
+    border-bottom: 3px solid #fff;
+    margin-bottom: -5px;
+  }
+  .btn {
+    padding: 6px 20px;
+  }
+  /* jumbotron-main */
+  .jumbotron-main h1 {
+    font-size: 62px;
+  }
+}
